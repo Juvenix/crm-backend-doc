@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#rsg-root,
+embed {
+  width: 100vw;
+  height: calc(100vh - 2px);
+  overflow: hidden;
+}
+
+#rsg-root::-webkit-scrollbar,
+embed::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#rsg-root,
+embed {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
